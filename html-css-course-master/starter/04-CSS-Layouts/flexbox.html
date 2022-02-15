@@ -8,6 +8,8 @@
     <style>
       .el--1 {
         background-color: blueviolet;
+        align-self: flex-start;
+        order: 2;
       }
       .el--2 {
         background-color: orangered;
@@ -18,12 +20,16 @@
       }
       .el--4 {
         background-color: goldenrod;
+        align-self: flex-end;
       }
       .el--5 {
         background-color: palevioletred;
+        align-self: stretch;
+        order: 1;
       }
       .el--6 {
         background-color: steelblue;
+        order: -1;
       }
       .el--7 {
         background-color: yellow;
@@ -34,12 +40,16 @@
 
       .container {
         /* STARTER */
+        display: flex;
         font-family: sans-serif;
         background-color: #ddd;
         font-size: 40px;
         margin: 40px;
 
         /* FLEXBOX */
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
       }
     </style>
   </head>
@@ -51,8 +61,6 @@
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
       <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
     </div>
   </body>
 </html>
